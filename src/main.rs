@@ -1,8 +1,6 @@
 mod tesseract_user;
 mod image_provider;
 
-use std::io::{Read};
-
 use crate::image_provider::{ImageProvider, SlurpImageProvider};
 use crate::tesseract_user::tesseract::get_text_from_image;
 
