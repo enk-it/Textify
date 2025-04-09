@@ -1,0 +1,8 @@
+[package]
+name = "textify"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tesseract = "0.15"
+image = "0.25"
