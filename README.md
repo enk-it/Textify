@@ -10,11 +10,15 @@ yay -S grim slurp tesseract tesseract-data-eng tesseract-data-rus
 
 ```
 
-# Installation
+# Build
 
 ```bash
 cargo build --release
+```
 
+# Installation
+
+```bash
 chmod +x ./target/release/textify
 sudo cp ./target/release/textify /usr/local/bin/ 
 ```
