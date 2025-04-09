@@ -1,18 +1,14 @@
-use std::io;
 pub mod slurp_image_provider;
+pub mod traits;
+pub mod structs;
 
 pub use slurp_image_provider::SlurpImageProvider;
-
-
-pub struct ImageData {
-    pub image: Vec<u8>,
-    pub height: i32,
-    pub width: i32
-}
+pub use structs::ImageData;
+pub use traits::ImageProvider;
 
 
 
-pub trait ImageProvider {
-    fn get_image(&self) -> Result<ImageData, io::Error>;
-}
+
+
+
 
