@@ -39,7 +39,7 @@ impl super::ImageProvider for SlurpImageProvider {
         let (x, y, width, height) = self.get_region_from_slurp().expect("Ну ошибка ебать какая то");
 
         let geometry = format!("{},{} {}x{}", x, y, width, height);
-        println!("Передаём в grim: grim -g '{}'", geometry);
+        // println!("Передаём в grim: grim -g '{}'", geometry);
 
         let output = Command::new("grim")
             .args(&["-g", &geometry, "-"])
