@@ -30,6 +30,11 @@ cargo build --release
 # Installation
 
 ```bash
+git clone https://github.com/enk-it/Textify.git
+cd Textify
+
+cargo build --release
+
 chmod +x ./target/release/textify
 sudo cp ./target/release/textify /usr/local/bin/ 
 ```
